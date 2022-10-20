@@ -1,0 +1,7 @@
+{
+  "name": "pru",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
