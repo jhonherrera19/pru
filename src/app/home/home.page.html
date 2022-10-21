@@ -1,9 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+    
+      KAMEHAMEHA:  CUENTA DE USUARIO
+  </ion-toolbar>    
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -13,8 +12,45 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+      <label>{{variable_interpolaridad}}</label>
+      <br>
+      
   </div>
+  <hr>
+  <div style="padding: 100px;">
+
+
+    <form (submit)="agregarDatos($event)">
+      <h2>genera tu cuenta</h2>
+      <div class="div">
+        <label for ="">nombre</label>
+        <br>
+        <input type="text" name="nombre" id=""> 
+      </div>
+      <div class="div">
+        <label for ="">edad</label>
+        <br>
+        <input type="number" name="edad" id=""> 
+      </div>
+      <div class="div">
+        <label for ="">correo</label>
+        <br>
+        <input type="text" name="correo" id=""> 
+      </div>
+      <div class="div">
+        <label for ="">contraceña</label>
+        <br>
+        <input type="text" name="contraceña" id=""> 
+      </div>
+      <div class="margen">
+        <button type="submit" >
+          agregar
+        </button> 
+          
+        
+      </div>
+    </form> 
+  </div>
+
 </ion-content>
